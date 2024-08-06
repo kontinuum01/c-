@@ -6,10 +6,12 @@ Console.WriteLine(value);
 int a = 5;
 int b = 8;
 
-if (a > b) {
-     Console.WriteLine(a);
-    }
+if (a > b)
+{
+    Console.WriteLine(a);
+}
 
-else {
+else
+{
     Console.WriteLine(b);
 }
