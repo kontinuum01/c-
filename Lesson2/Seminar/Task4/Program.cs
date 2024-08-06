@@ -1,10 +1,24 @@
-﻿System.Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+﻿//Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
 
-int a = 0;
-
-while (number > a)
+Console.Write("Введите натуральное число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+if (N < 10)
 {
-  a = number % 10;
+  Console.WriteLine(N);
 }
-Console.Write($"{a} ");
+else
+{
+  while (N > 0)
+  {
+    int currentDigit = N % 10;
+    N /= 10;
+    if (N > 0)
+    {
+      Console.Write(currentDigit + ",");
+    }
+    else
+    {
+      Console.WriteLine(currentDigit);
+    }
+  }
+}
